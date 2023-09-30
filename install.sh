@@ -7,5 +7,8 @@ dir_name=$(cd $(dirname $0) ; pwd | xargs basename)
 
 ! [ -f ~/.vimrc ] && touch ~/.vimrc 
 [ -n "$(grep .vim_runtime ~/.vimrc)" ] && echo "vim_runtime is already installed"
-[ -z "$(grep .vim_runtime ~/.vimrc)" ] && echo "source ~/.vim_runtime/init.vim" >> ~/.vimrc
+if [ -z "$(grep .vim_runtime ~/.vimrc)" ] ; then
+	echo "source ~/.vim_runtime/init.vim" >> ~/.vimrc
+	git submodule update --init --recursive
+fi
 
