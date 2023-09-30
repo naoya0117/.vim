@@ -1,0 +1,9 @@
+[submodule "bundle/copilot.vim"]
+	path = bundle/copilot.vim
+	url = git@github.com:github/copilot.vim.git
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "bundle/vimsence"]
+	path = bundle/vimsence
+	url = git@github.com:vimsence/vimsence.git
