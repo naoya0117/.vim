@@ -5,7 +5,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-colorscheme solarized
+colorscheme molokai
 
 set clipboard=unnamedplus,unnamed
 set spell
