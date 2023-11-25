@@ -1,7 +1,7 @@
 # vimfiles
 - PC環境の移行のため、vimの各種設定ファイルをまとめてリポジトリにしました。
 - .vimrcに、リポジトリ内のファイルをsourceコマンドで参照させることで.vimrcの変更は最小限にとどめています。
-- this is vimfiles
+- vimfiles
 ## Install
 ```
 $ git clone https://github.com/vim_runtime.git ~/.vim_runtime
