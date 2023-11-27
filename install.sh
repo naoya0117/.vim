@@ -2,19 +2,6 @@
 
 SCRIPT_DIR=$(cd $(dirname $0) ; pwd)
 
-isModuleInstaled() {
-    moduleFiles=$(find ${SCRIPT_DIR} -mindepth 1 | wc -l)
-
-    if [ $moduleFiles -gt 0 ] ; then
-        echo "modules are already installed"
-        return 0
-    else
-        echo "modules are not installed"
-        return 1
-    fi
-
-}
-
 isPathCorrect() {
     if [[ ${SCRIPT_DIR} == "${HOME}/.vim_runtime" ]] ; then
         echo "path check is done."
@@ -34,6 +21,11 @@ isVimruntimeLoaded () {
     return 1
 }
 
+installModule () {
+    echo "installing modules..."
+    git submodule update --init --recursive
+}
+
 if ! [ -f ~/.vimrc ] ; then
     touch ~/.vimrc
 fi
@@ -45,10 +37,7 @@ else
     exit 1
 fi
 
-if ! isModuleInstaled  ; then
-    echo "installing modules..."
-    git submodule update --init --recursive
-fi
+installModule
 
 if ! isVimruntimeLoaded ; then
     echo "updatint vimrc..."
