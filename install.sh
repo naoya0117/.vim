@@ -22,6 +22,7 @@ isVimruntimeLoaded () {
 }
 
 installModule () {
+    cd ${SCRIPT_DIR}
     echo "installing modules..."
     git submodule update --init --recursive
 }

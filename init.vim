@@ -16,6 +16,7 @@ set fileencodings=utf-8,euc-jp,cp932,default,latin
 set ambiwidth=double
 set shortmess+=I
 set listchars=tab:>-
+set nu
 
 
 filetype on
