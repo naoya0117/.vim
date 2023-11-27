@@ -3,9 +3,9 @@
 SCRIPT_DIR=$(cd $(dirname $0) ; pwd)
 
 isModuleInstaled() {
-    installed=$(ls ${SCRIPT_DIR}/bundle/*/ | grep -v bundle | wc -l)
+    moduleFiles=$(find ${SCRIPT_DIR} -mindepth 1 | wc -l)
 
-    if [ $installed -gt 0 ] ; then
+    if [ $moduleFiles -gt 0 ] ; then
         echo "modules are already installed"
         return 0
     else
