@@ -10,7 +10,7 @@ $ ./install.sh
 $ vim
 :Copilot setup  #if you use github copilot
 ```
-## Links
+## Contact
 - Repository: [https://github.com/naoya0117/vim_runtime](https://github.com/naoya0117/vim_runtime)
 - GitHub: [https://github.com/naoya0117](https://github.com/naoya0117)
 - Blog: [https://naoya0117.com](https://naoya0117.com)
