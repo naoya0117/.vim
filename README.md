@@ -1,4 +1,4 @@
-# [vim_runtime](vim_runtime)
+# [vim_runtime](https://github.com/naoya0117/vim_runtime)
 - PC環境の移行のため、vimの各種設定ファイルをまとめてリポジトリにしました。
 - .vimrcに、リポジトリ内のファイルをsourceコマンドで参照させることで.vimrcの変更は最小限にとどめています。
 - init.vimの中にvimrcに各設定を書いています。
